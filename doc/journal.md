@@ -16,19 +16,23 @@ I hope that by doing this work, I can provide better informations
 for the people who need it.
 
 ### The Tools
-The CPU was found to be from the S1C88 family of microcontroller by Epson.
+The CPU was found to be from the S1C88 family of microcontroller by Epson. The S1C88
+comes in different models. The one used in the pokemini is a MODEL3 maximum mode.
 It has its own official compiler you can find on [archive.org](https://web.archive.org/web/20190411141705/www.epsondevice.com/products_and_drivers/semicon/products/micro_controller/zip/s5u1c88000c16.zip).
 Sadly it is only available natively on Windows. If you’re on Linux or Mac, you
 have to make a Windows VM or install wine. The two links I posted above provide
 a Makefile already configured to be able to use the compiler through wine.
 
 It has a `doc/` directory which I encourage you to explore. The documentation has
-a pdf for how the CPU behave and another one on the compiler itself and the
-tools around it.
+`manual1E.pdf` for the C compiler, assembler and linker. `manual2E.pdf` focus on
+the rest of the tools provided. You can find the documentation for the
+inner functioning of the core itself [here](http://www.rayslogic.com/Software/TimexUSB/Docs/s1c88%20core%20cpu%20manual.pdf).
 
 #### Compiling and running a hello world
 To make sure everything is setup properly I’m going to build a minimal project.
 I’m going with [tup] as my build system instead of `make` as I want to learn
 more about it. I also don’t want to spend too much time writing a Makefile.
+
+## 2021/04/15
 
 [tup]: http://gittup.org/tup
