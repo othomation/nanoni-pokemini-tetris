@@ -28,11 +28,20 @@ It has a `doc/` directory which I encourage you to explore. The documentation ha
 the rest of the tools provided. You can find the documentation for the
 inner functioning of the core itself [here](http://www.rayslogic.com/Software/TimexUSB/Docs/s1c88%20core%20cpu%20manual.pdf).
 
-#### Compiling and running a hello world
+### Compiling and running a hello world
 To make sure everything is setup properly I’m going to build a minimal project.
 I’m going with [tup] as my build system instead of `make` as I want to learn
-more about it. I also don’t want to spend too much time writing a Makefile.
+more about it. I also don’t want to spend too much time writing a solid Makefile.
 
 ## 2021/04/15
+Still going on with the tup setup. It’s a bit hard to learn two tools at once.
+I can’t use a typical C compiler as it wouldn’t be able to target the S1C88 as
+a backend, without myself being involved in describing such backend.
+The S1C88 official compiler seems to not follow flag conventions we see in
+gcc or clang.
+Plus, we don’t target a desktop executable but rather the binary blob that will
+be sent either in a emulator or the real hardware.
+
+
 
 [tup]: http://gittup.org/tup
