@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "PokeMini",
+            "includePath": [
+                "${workspaceFolder}/src/include/**",
+                "C:/dev/S1C88/include/**"
+            ],
+            "forcedInclude": ["C:/dev/S1C88/include/C88.H"],
+            "defines": ["VSCODE"],
+            "compilerPath": "",
+            "cStandard": "c89",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
