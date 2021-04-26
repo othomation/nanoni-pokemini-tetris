@@ -113,7 +113,7 @@ Basically, adding support for a custom compiler is definitely not trivial, and
 requires to pay the licence for a proprietary C/C++ front-end. However, not
 having a compiler set up on `compilerPath` isn’t really a problem, as Intellisense
 will have enough informations with the included files. So in the end, we can
-set `compilerPath` to an empty tring, `""`.
+set `compilerPath` to an empty string, `""`.
 
 There is two things we need to include for Intellisense to pick up:
 * the `include/` folder from the S1C88 toolchain
